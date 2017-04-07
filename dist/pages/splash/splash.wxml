@@ -1,0 +1,5 @@
+<view class="container">
+	<div class="drop"></div>
+  	<div class="wave"></div>
+    <view class="weui-article__h1 title">水滴石穿 持之以恒</view>
+</view>

@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["pages/splash/splash.xml"],"sourcesContent":["<view class=\"container\">\n\t<div class=\"drop\"></div>\n  \t<div class=\"wave\"></div>\n    <view class=\"weui-article__h1 title\">水滴石穿 持之以恒</view>\n</view>"],"file":"splash.wxml"}

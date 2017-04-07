@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["pages/index/index.json"],"sourcesContent":["{\n  // 类型：String；默认值：无\n  // 导航栏标题文字内容\n  \"navigationBarTitleText\": \"目标\"\n}"],"file":"index.json"}

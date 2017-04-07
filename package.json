@@ -1,0 +1,60 @@
+{
+  "name": "drip-weapp",
+  "version": "1.0.0",
+  "description": "drip weapp client",
+  "main": "index.js",
+  "scripts": {
+    "lint": "gulp lint",
+    "watch": "gulp watch",
+    "generate": "gulp generate",
+    "build": "cross-env NODE_ENV=production gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/growu/drip-weapp.git"
+  },
+  "keywords": [
+    "weapp",
+    "drip"
+  ],
+  "author": "growu <http://www.growu.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/growu/drip-weapp/issues"
+  },
+  "homepage": "https://github.com/growu/drip-weapp#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.0",
+    "cross-env": "^4.0.0",
+    "del": "^2.2.2",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.0.0",
+    "eslint-friendly-formatter": "^2.0.7",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^2.2.0",
+    "generate-weapp-page": "^0.1.3",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-jsonminify": "^1.0.0",
+    "gulp-less": "^3.3.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.5.1",
+    "gulp-uglify": "^2.1.2",
+    "gulp-util": "^3.0.8",
+    "inquirer": "^3.0.6",
+    "run-sequence": "^1.2.2"
+  }
+}

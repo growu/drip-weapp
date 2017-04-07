@@ -1,0 +1,5 @@
+{
+  // 类型：String；默认值：无
+  // 导航栏标题文字内容
+  "navigationBarTitleText": "目标"
+}

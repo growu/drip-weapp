@@ -1,0 +1,13 @@
+.btn {
+  margin: 0 auto;
+  text-align: center;
+}
+.weui-grid {
+  padding: 10px;
+}
+.days {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 28px;
+  color: #3498db;
+}

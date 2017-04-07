@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="page">
+    <view class="page__hd">
+        <view class="weui-panel weui-panel_access" wx:for="{{checkboxItems}}">
+            <view class="weui-panel__bd" >
+                <navigator url="../goal/view?id={{item.value}}" redirect="true" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+<!--                         <image class="weui-media-box__thumb" src="{{icon60}}" />
+ -->                 <label class="weui-cell weui-check__label">
+                        <checkbox class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+
+                    <view class="weui-cell__hd weui-check__hd_in-checkbox">
+                        <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+                        <icon class="weui-icon-checkbox_success" type="success" size="23" wx:if="{{item.checked}}"></icon>
+                    </view>
+                </label>
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">{{item.name}}</view>
+                        <view class="weui-media-box__desc">已完成 23 天</view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>

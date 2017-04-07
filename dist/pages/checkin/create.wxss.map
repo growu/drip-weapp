@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/checkin/create.less"],"names":[],"mappings":"AAAA;EACE,gBAAA","sourcesContent":[".title {\n  font-size: 40rpx;\n}\n"],"file":"create.wxss"}

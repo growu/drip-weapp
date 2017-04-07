@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/goal/view.less"],"names":[],"mappings":"AAAA;EACC,cAAA;EACA,kBAAA;;AAGD;EACC,aAAA;;AAGD;EACC,cAAA;EACA,kBAAA;EACA,eAAA;EACA,cAAA","sourcesContent":[".btn {\n\tmargin:0 auto;\n\ttext-align:center;\n}\n\n.weui-grid {\n\tpadding:10px;\n}\n\n.days {\n\tmargin:0 auto;\n\ttext-align:center;\n\tfont-size:28px;\n\tcolor:#3498db;\n}"],"file":"view.wxss"}
