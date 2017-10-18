@@ -1,1 +1,1 @@
-{"version":3,"sources":["pages/my/index.less"],"names":[],"mappings":"AAAA;EACE,gBAAA","sourcesContent":[".title {\n  font-size: 40rpx;\n}\n"],"file":"index.wxss"}
+{"version":3,"sources":["pages/my/index.less"],"names":[],"mappings":"AAAA;EACE,eAAA;;AAGF;EACE,kBAAA;EACA,WAAA","sourcesContent":[".title {\n  font-size: 40px;\n}\n\ncontact-button {\n  position: absolute;\n  right:10px;\n}\n\n"],"file":"index.wxss"}

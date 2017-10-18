@@ -1,9 +1,9 @@
 <!--index.wxml-->
 <view class="page">
-    <view class="page__hd">
+    <view class="">
         <view class="weui-panel weui-panel_access" wx:for="{{checkboxItems}}">
             <view class="weui-panel__bd" >
-                <navigator url="../goal/view?id={{item.value}}" redirect="true" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                <navigator url="../goal/view?id={{item.value}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
 <!--                         <image class="weui-media-box__thumb" src="{{icon60}}" />
  -->                 <label class="weui-cell weui-check__label">
@@ -23,4 +23,5 @@
             </view>
         </view>
     </view>
+    <view class="tab_btn"><a href=""><img src="images/plus.png" /></a></view>
 </view>

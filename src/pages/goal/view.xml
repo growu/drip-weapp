@@ -17,31 +17,56 @@
 
 	<view class="weui-panel weui-panel_access">
         <view class="weui-panel__bd">
+			<view class="btn">
+				<navigator url="../checkin/create?id=1">
+					<icon type="success_circle" size="90" color="#3498db"/>
+				</navigator>
+			</view>
         	 <view class="weui-grids">
             	<block >
-	                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
-	                    <view class="days">30</view>
+	                <view class="weui-grid" hover-class="weui-grid_active">
+	                    <view class="num">30</view>
 	                    <view class="weui-grid__label">总天数</view>
-	                </navigator>
+	                </view>
             	</block>
             	<block >
-	                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
-	                    <view class=" days">23</view>
+	                <view class="weui-grid" hover-class="weui-grid_active">
+	                    <view class="num">23</view>
 	                    <view class="weui-grid__label">已完成天数</view>
-	                </navigator>
+	                </view>
             	</block>
             	<block >
-	                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
-	                    <view class=" days">8</view>
-	                    <view class="weui-grid__label">最高连续天书</view>
-	                </navigator>
+	                <view class="weui-grid" hover-class="weui-grid_active">
+	                    <view class="num">8</view>
+	                    <view class="weui-grid__label">最高连续天数</view>
+	                </view>
             	</block>
         	</view>
-        	<view class="btn">
-        		<navigator url="../checkin/create?id=1">
-	    			<icon type="success_circle" size="90" color="#3498db"/>
-	    		</navigator>
-	    	</view>
+		</view>
+	</view>
+
+
+	<view class="weui-panel weui-panel_access box box-tb box-align-center">
+		<view class="calendar pink-color box box-tb">
+			<view class="top-handle fs28 box box-lr box-align-center box-pack-center">
+				<view class="prev box box-rl" bindtap="handleCalendar" data-handle="prev">
+					<view class="prev-handle box box-lr box-align-center box-pack-center">《</view>
+				</view>
+				<view class="date-area box box-lr box-align-center box-pack-center">{{cur_year || "--"}} 年 {{cur_month || "--"}} 月</view>
+				<view class="next box box-lr" bindtap="handleCalendar" data-handle="next">
+					<view class="next-handle box box-lr box-align-center box-pack-center">》</view>
+				</view>
+			</view>
+			<view class="weeks box box-lr box-pack-center box-align-center">
+				<view class="flex week fs28" wx:for="{{weeks_ch}}" wx:key="{{index}}" data-idx="{{index}}">{{item}}</view>
+			</view>
+			<view class="days box box-lr box-wrap">
+				<view wx:if="{{hasEmptyGrid}}" class="grid white-color box box-align-center box-pack-center" wx:for="{{empytGrids}}" wx:key="{{index}}" data-idx="{{index}}">
+				</view>
+				<view class="grid white-color box box-align-center box-pack-center" wx:for="{{days}}" wx:key="{{index}}" data-idx="{{index}}">
+					<view class="day {{index >= 5 && index <= 13 ? 'border-radius pink-bg' : ''}} box box-align-center box-pack-center">{{item}}</view>
+				</view>
+			</view>
 		</view>
 	</view>
 </view>
